@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zn"></html>
+<head>
+    <meat charset="utf-8"></meat>
+    <title>HelloHtml</title>
+</head>
+<body>
+    <!-- div 没有任何语义的容器 -->
+    <div>
+        <h1>This is my first html</h1>
+        <p>HelloWord</p>
+        <!-- header 元素表示页眉 -->
+            <header role="banner">
+                <!-- nav  中的链接可以指向页面中的内容-->
+                <nav role="navigation">
+                <!-- ul 元素表示无需列表 -->
+                
+                <ul>
+                    <!-- li元素是列表 生成圆点 -->
+                    <li>
+                        <!-- title 属性可以给与光标提示 -->
+                        <a href="#answer1" title="这是title属性的作用">What is your return policy?</a>
+                    </li>
+                    <li>
+                        <a href="#answer2">How do I find a localtion?</a>
+                    </li>
+                </ul>
+                </nav>
+            </header>
+        <!-- main 元素代表页面的主要内容 只能有一个 -->
+        <main role="main">
+            <!-- article 元素可以包含各种元素 -->
+            <article>
+                <h1>这是文章标题</h1>
+                <p>这是文章的主要内容</p>
+                <!-- footer 元素同header元素类似 -->
+                <footer>
+                    <p>
+                        这是文章的页脚
+                    </p>
+                    <address>
+                        <a href="https://www.baidu.com"> 作者的联系方式</a>
+                    </address>
+                </footer>
+                <!-- section 元素 是具有相似主题的一组内容 而div不传达任何语义 -->
+                <section>
+                    <h2>阅读评论区(附属于父article)</h2>
+                    <article>
+                        <footer>
+                            评论内容
+                                <!-- time 元素 -->
+                            <time datetime="2014-02-26">
+                                February 26,20114
+                            </time>
+                        </footer>
+                    </article>
+                </section>
+            </article>
+        </main>
+        <!-- aside 与主要内容相关的附注等 -->
+        <aside role="complementary">
+            <h1>辅助栏标题</h1>
+            <ul>
+                <li>first</li>
+                <li>second</li>
+                <li>third</li>
+            </ul>
+            <p><small>Gredit: <a href="https://www.baidu.com"><cite>Varcelona.de</cite bvhgbgt6></a></small></p>
+            </aside>
+            
+            <!-- 上一个header指向这里 -->
+            <article id="answer1">
+                <h2>What is your return policy?</h2>
+                <p>I don't know</p>
+            </article>
+            <article id="answer2">
+                <h2>How do I find a location?</h2>
+                <p>I don't know</p>
+            </article>
+            <p>sjlfk</p>
+        <!-- 页面级页脚才可以使用 role="contentinfo" -->
+        <footer>
+            [版权信息]
+        </footer>
+    </div>
+</body>
